@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('site.about');
+});
+
+Route::get('/user', function () { //命名新的路由
+    return 'user';
 });
