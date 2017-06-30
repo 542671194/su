@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('site.about');
-});
+Route::get('/', 'siteController@index');
 
-Route::get('/user', function () { //命名新的路由
-    return 'user';
-});
+Route::get('/about','siteController@about');
+
+Route::get('/test','siteController@test');
